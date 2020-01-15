@@ -2,7 +2,7 @@
 Master branch of the S2 project 
 
 ### Important
- - Read [this guide] (https://gist.github.com/andrewtkemp1/fa8f28e867e17559b931c3f6de9a4b9e)
+ - Read [this guide](https://gist.github.com/andrewtkemp1/fa8f28e867e17559b931c3f6de9a4b9e)
    to have an overview of how things will be working.
    
    #### Quick Reminder
