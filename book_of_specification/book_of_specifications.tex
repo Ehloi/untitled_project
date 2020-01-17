@@ -1,0 +1,352 @@
+\documentclass[a4paper, 11pt] {article}
+
+%Declaration of all the package used
+
+%Packages to write in english with the correct formatting
+%and use of symbols.
+\usepackage[english]{babel}
+\usepackage[utf8] {inputenc} %UTF8 encoding with all symbols
+\usepackage[T1] {fontenc} %Allow use of vectorial police
+
+%Package to make outline and spaces
+%\usepackage{outline} %Not Working on the school computer
+\usepackage{xspace}
+
+
+%Package for pictures implementation
+\usepackage{graphicx}
+\usepackage{float}
+
+%For the color implementation, if needed.
+\usepackage{xcolor}
+
+%For the default police
+\usepackage{lmodern}
+
+%Packages for interactive summary
+%Lots of setup in the call to the package hyperref
+\usepackage[hyphens]{url}
+\usepackage[pdfauthor = {{Untitled Group}}, pdftitle = {{Specifications book}}, pdfstartview = Fit,
+            pdfpagelayout = SinglePage, pdfnewwindow = true, bookmarksnumbered = true, breaklinks,
+            colorlinks, linkcolor = black, urlcolor = black, citecolor = cyan, linktoc = all]{hyperref}
+
+%Packages for page layout
+\usepackage{fancyhdr}
+
+
+%Creating new commands
+\newcommand{\latex}{\LaTeX\xspace}
+
+
+
+
+%Setting up the things before begining the document.
+
+\pagestyle{fancy} %use the fancyhdr package to set the layout correctly
+\fancyhead[L]{\leftmark} %set the text on the left for the header 
+\fancyhead[R]{\rightmark} %same but for the right
+\fancyhf{}
+\fancyfoot[L]{Untitled Group} %set the tect on the left for the footer
+\fancyfoot[R]{EPITA 2024} %same but for the right
+\fancyfoot[C]{\thepage} %set the page number
+
+\title{\begin{center} \hspace{1.5cm} Book of Specifications \end{center}}
+\author{Untitled Group}
+
+
+
+%Starting the documents
+\begin{document}
+
+\maketitle
+\begin{center}
+    \includegraphics[width = \linewidth]{Epita.png}
+\end{center}
+
+\newpage %Pass to a newpage
+
+\tableofcontents %to make the summary. Don't forget to compile twice
+
+\newpage
+
+\section*{Introduction} %add the * for a section without a numerotation
+
+\par
+We, Untitled group, will present our first year project at EPITA, how will the project be and what will be the task needed to complete it.
+\newline
+
+
+\section{Origin}
+
+\subsection{Members Presentation}
+%use \subsubsection for each members
+
+    \subsubsection*{\textit{Project Leader} Geraud Del Pino}
+
+    \par
+    I am Geraud Del Pino and , somehow, the project leader of the Untitled Group. I bullied the other group members into doing a tycoon game. I’m not as passionate about video games as my fellow students might be, as I only enjoy tycoon games. I’m more into the theorie even though I still don’t understand much of it, I’m learning by the day. I consider this project to be a great way to learn about those tools that, I , mostly never ever had used. I’m pretty excited to be able to do some managing of he group (even though we will manage ourself). I awaits those famous sleepless night the coding life is so famous for.
+    \newline
+
+
+
+
+
+
+    \subsubsection*{Eloi Honnet}
+
+    \par
+    I am Eloi Honnet one of the four members of this group. I have been interested in coding for about three years. I really like video games and my group members love them too, so it is a good way to have fun together. 
+    I want to do this project because I think it is a really good way of learning: learning by myself and enjoy it. This is also a way of learning how to work in group about an important project and I like working this way.
+    We wondered what to do and we agreed on a certain type of game which is a tycoon, I really like the main idea and I think the possibilities are multiples. I think it is not going to be easy at first sight, but we will do a good job. 
+    I am determined about this project
+    \newline
+
+
+
+
+\newpage
+    
+    \subsubsection*{Zaineb Abdulkarim}
+
+	\par
+I am Zaineb Abdulkarim, iraqi student in epita. I am one of the members of the untitled group. Compared to other students in epita , i consider myself a newbie in coding. Yet I am excited for this project due to the fact that i will get to create my own game! I grew up playing video games so it would be cool to be able to make one! This project is going to show me how it feels to work for a given project in my professional future as an IT engineer!  Can’t wait!
+	\newline
+
+
+
+    \subsubsection*{\textit{\latex writer} Malo Lambert}
+
+    \par
+    Hello, I am Malo Lambert, member of this group, since i'm 11 I am really interested in computer science and computer security more precisely. I also love coding and I do play some
+    video game. Being able to realize this project means a lot to me as I have always wanted to make a game. I am also the one that will write all the \latex documents. I will learn to work with others and discover a lot of new things. I'm very happy to be with this group and hope to do a great job.
+    \newline
+
+
+\subsection{Group Origin}
+
+\par
+We immediatly thought of being together as a group when we heard about the S2 project.
+We generally got the same idea and have a good workflow together. Unfortunatly we were
+only 3 and not able to make a group. So we will have to adapt and learn how to work with
+our new member.
+\newline
+
+
+
+\newpage
+\section{The Project}
+
+    \subsection{Project Presentation}
+    %again we can use \subsubsection for why ? how ?
+
+    \subsubsection{Type of Project}
+
+    \par
+    We chose to do a tycoon type game. In this of game the player is generally the head of a small corporation / company. His objective is to make the company he plays as big and as successful as possible. There aren’t any limit to the type of company the player can have as you can have a factory that produces various items (such as in Factorio where you have to create several items to combine it into a rocket) , to a city (such as in SimCity or City Skylines). Even though the goal can be very different between each tycoon games, the means of winning are often the sames:
+    \begin{itemize}
+        \item Create a mean of having a constant positive cashflow;
+        \item Wait in order to have more cash;
+        \item Use that cash to expends your means of making money;
+        \item Repeat;
+    \end{itemize}\par
+
+    In tycoons that make you play as a service more than a proper company, the game often takes into account what you might call bonuses (which still helps you generate more cash flow). For example in city Skylines having teaching equipements doesn’t actually earns you more money, but it transforms your citizens into “educated citizens” whom can work in offices instead of factories, therefore earns more money and pays more taxes (gives you more money).\par
+
+     Our game will be slightly differently than those. In those famous titles you really only manage one thing (a city, a transport company, a theme park…) we wanted to make it wider. That’s why we choose to make a real tycoon game. In real life the 1\% rarely only have one mean of having money, that’s what we wanted in this game.\par
+
+     Untitled project will therefore allows you to use the following method to make money:
+     \begin{itemize}
+        \item manage a transport company of people and merchandises (using buses / trucks, trains, planes and more);
+        \item Let you lends money to other people (being player / bots are even countries, yes you can become THAT rich);
+        \item Create and manage industries harvesting wood, coal, gold and much more;
+    \end{itemize}\par
+
+    Our game will also let you have a more people-oriented approach as you will be able to bribe people in charge in cities in order for them to vote bills that are favorable for you. You can also accept contracts from cities such as delivering a certain amount of goods or transporting a certain amount of people in or out of the citie, earning you a generous amount of money.
+    \newline
+
+    \subsubsection{Object of Study}
+
+    \par
+    The project being a tycoon games that has a wide spectrum of possibilities we’ll have to look into how those sector of the economy actually works. How the wages of workers should be calculated in order for it to be accurate without being too hard, each and every member will therefore have a much deeper understanding of some basic economic system. None of us had ever worked on such a large scale project, both in term of length and in term of complexity. The most experienced in coding of us
+    being Malo, we all hope to become better in coding as well as learning new methods of working (none of us ever worked with Unity for example). This group being made of only four people knowing each other prior to this project, we all will learn how to work with some we never met before, this is a perfect way to train us for the real life project we will have when we finally graduate Epita.\par
+
+    \subsubsection{State of Art}
+
+    \par
+    The first version of a business simulation game is INTOPIA, developed in 1963 it was more of a pedagogic tool for undergraduates of various universities to learn about basic business management technique than a proper game. INTOPIA set an high quality expectation for all the futur game of this genre. Being a tool for business student it contained lots of extremely detailed stats and plenty of methods to manage your companie. But the genre was booming after the release of sid meier's
+    railroads tycoon , Sim City  and Roller Coaster Tycoon 2 it was those games that really made the genre popular. They followed the tradition of high quality details in those games and high fidelity depiction of real worlds economy. Our project is directly inspired from \href{www.openttd.org}{\textit{Open TTD}} who’s base on the famous \textit{Transport Tycoon Deluxe}.\par
+    
+
+    \newpage
+
+    \subsection{Structure of the Project}
+
+    \subsubsection{Functional Aspect}
+
+    \par
+    It’s a tycoon based game. The player will be able to manage a transport company, create, and hire managers for various factories and act as a bank (ergo lend money and use a Stock Exchange system). It will also be able to play \textit{dirty} s in destroying competitor’s real estate and roads, bribe politician to grant you advantages and plain sabotage of factories.
+The ability to adjust precise part of you budgeting will also be a main part of the game. You’ll be able to change the amount of money spent on cleaning or reparations, be aware that reducing those too much will cause the commuters to complain about the degrading cleanliness of your transport, and may cause malfunction in the department whose budget has been reduced. Using the stock market will also come with a big risk factor : using it is a great way to grow your capital fast but it also has
+various risk percentage (a 15\% return action won’t be risk free and you can loose all the money you invested).\par
+
+\subsubsection{Technological}
+
+\par
+As for the software used, we’ll adobe photoshop to make the graphics ( in the style of Open TTD), Audacity for the sound design as well as FL studio and the famous mandatory Unity for the designs and game engine.\par
+
+\subsubsection{Methodological}
+
+\par
+Courses about basic economic will be required (whose can be easily found online) and a deeper understanding of the inner working of company as well as good understanding of budgeting will be required from all of us.\par
+
+\subsubsection{Operational Costs}
+
+\begin{itemize}
+    \item Packs of cigs for Geraud and Malo;
+    \item coffee for lengthy cession of works;
+    \item occasional trips to the therapist for eventual meltdowns;
+\end{itemize}\par
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Task distribution}
+
+\subsection{Task distribution among the members}
+
+\par
+In this section we will talk about how the task will be distributed among the members. This task distribution 
+will serve as a general example as everybody will work a little bit on everything. We will set a task leader who will mainly focus 
+on his task and one or more asssitant to help him on his task.
+\newline
+
+\par
+Legend :
+\begin{itemize}
+    \item $\times$ = Task Leader;
+    \item $\circ$ = Assistant;
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+    \hline & Geraud & Eloi & Zaineb & Malo \\
+    \hline Design(Graphics) & $\times$ & $\circ$ & & \\
+    \hline IA & & $\circ$ & $\circ$ & $\times$ \\
+    \hline Sound Design & $\times$ & & & $\circ$ \\
+    \hline Menus & $\circ$ & $\times$ & $\circ$ & \\
+    \hline Game Core & $\times$ & $\circ$ & $\circ$ & $\circ$ \\
+    \hline Sprite/Hitbox (Game Physics) & & $\times$ & & $\circ$ \\
+    \hline Network & & $\circ$ & & $\times$ \\
+    \hline Website & $\circ$ & & $\times$ & \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \bf{Fig. 1 : Initial task distribution among members}
+\end{center}
+
+\newpage
+\subsection{Project Progress}
+
+\par
+The project's progress will be presented in a tabular with the total percentage progress of a task
+and the progress of the task leader and it's assistant.
+\newline
+
+\subsubsection{First Presentation}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline & Task Completion & Geraud & Eloi & Zaineb & Malo  \\
+    \hline Design(Graphics) & 50\% & 70\% & 30\% & &  \\
+    \hline IA & 25\% &  & 10\% & 10\% & 80\%   \\
+    \hline Sound Design & 50\% & 70\% & & & 30\% \\
+    \hline Menus & 70\%  & 20\% & 60\%  & 20\% & \\
+    \hline Game Core & 33\%  & 35\% & 20\% & 20\% & 25\% \\
+    \hline Sprite/Hitbox (Game Physics) & 40\% & & 60\% & & 40\% \\
+    \hline Network & 33\% & & 40\% & & 60\% \\
+    \hline Website & 60\% & 10\%  &  & 90\% &  \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \bf{Fig 2. : Progress rate at the first presentation}
+\end{center}
+
+\subsubsection{Second Presentation}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline & Task Completion & Geraud & Eloi & Zaineb & Malo  \\
+    \hline Design(Graphics) & 100\% &  &  & &  \\
+    \hline IA & 65\% &  & 5\% & 5\% & 90\%   \\
+    \hline Sound Design & 100\% & & & & \\
+    \hline Menus & 100\%  & & & & \\
+    \hline Game Core & 70\% & 50\% & 10\% & 30\% & 10\% \\
+    \hline Sprite/Hitbox (Game Physics) & 100\% & & & & \\
+    \hline Network & 80\% & & 50\% & & 50\% \\
+    \hline Website & 95\% & 5\%  &  & 95\% &  \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \bf{Fig 3. : Progress rate the second presentation}
+\end{center}
+
+\newpage
+
+\subsubsection{Final Presentation}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline & Task Completion & Geraud & Eloi & Zaineb & Malo  \\
+    \hline Design(Graphics) & 100\% &  &  & &  \\
+    \hline IA & 100\% &  &  &  &   \\
+    \hline Sound Design & 100\% & & & & \\
+    \hline Menus & 100\%  & & & & \\
+    \hline Game Core & 100\%&  &  &  &  \\
+    \hline Sprite/Hitbox (Game Physics) & 100\% & & & & \\
+    \hline Network &100\% & &  & &  \\
+    \hline Website &100\% &  &  &  &  \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \bf{Fig 4. : Progress for the final presentation}
+\end{center}
+
+\newpage
+
+\section{Conclusion}
+
+\par
+ We chose to do a tycoon type game, this type of game will require us to look deeply into economic theory and inner workings of companies. The game will allow the player to create, manage and handle problems related to the creation of entreprises especially in the domain of transport, mining, manufacturing as well as handle more abstract notion of money such as the stock market and lending or borrowing money. It will take us through the learning of using Unity, various design softwares, as well
+ as push further the use of C\#. It won’t be easy, but we wouldn’t do it if it was.\par
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
