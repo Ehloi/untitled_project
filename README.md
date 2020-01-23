@@ -11,6 +11,7 @@ Master branch of the S2 project
     - `git push --set-upstream origin branch_name` to make your branch visible and set your upload stream to this special              branch
     - `git branch` list the branch and put an * next to the branch your're working on
     - `git checkout branch_name` go to the specified branch
+    - `git checkout -d branch_name` delete branch locally
     
  - **Please comment your code !!**
 
